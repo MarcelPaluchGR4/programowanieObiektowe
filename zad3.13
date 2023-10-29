@@ -1,0 +1,20 @@
+using System;
+
+namespace ConsoleApplication1
+{
+    internal class Program
+    {
+        public static void Main(string[] args)
+        {
+            int wynik, n;
+            wynik = 0;
+            n = int.Parse(Console.ReadLine());
+            wynik = -1 * n / 2;
+            if (n % 2 == 1)
+            {
+                wynik += n;
+            }
+            Console.WriteLine(wynik);
+        }
+    }
+}
