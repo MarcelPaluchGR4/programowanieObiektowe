@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace ConsoleApplication1
+{
+    internal class Program
+    {
+        public static void Main(string[] args)
+        {
+            int n, suma;
+            List<int> wynik;
+            Console.WriteLine("Podaj n:");
+            n = int.Parse(Console.ReadLine());
+            wynik = DzielnikiNiewlasciwe(n);
+            suma = wynik.Sum();
+            if (suma == n)
+            {
+                Console.WriteLine("Liczba doskonala");
+            }
+            else
+            {
+                Console.WriteLine("nie jest to liczba doskonala");
+            }
+        }
+        
+        public static List<int> DzielnikiNiewlasciwe(int a) {
+            List<int> wynik = new List<int>();
+            for (int i = 1; i <= a / 2; i++) {
+                if (a % i == 0) {
+                    wynik.Add(i);
+                }
+            }
+            return wynik;
+        }
+    }
+    
+     
+}
