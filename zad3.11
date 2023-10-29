@@ -1,0 +1,20 @@
+using System;
+
+namespace ConsoleApplication1
+{
+    internal class Program
+    {
+        public static void Main(string[] args)
+        {
+            int i, wynik;
+            wynik = 0;
+            i = 1;
+            while (wynik < 100)
+            {
+                wynik += i;
+                i++;
+            }
+            Console.WriteLine(i-1);
+        }
+    }
+}
