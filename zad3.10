@@ -1,0 +1,22 @@
+using System;
+
+namespace ConsoleApplication1
+{
+    internal class Program
+    {
+        public static void Main(string[] args)
+        {
+            int n, silnia;
+            silnia = 1;
+            Console.WriteLine("podaj n");
+            n = int.Parse(Console.ReadLine());
+            while (n>1)
+            {
+                silnia *= n;
+                n--;
+            }
+
+            Console.WriteLine(silnia);
+        }
+    }
+}
